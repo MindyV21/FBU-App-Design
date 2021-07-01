@@ -1,1 +1,91 @@
-# FBU-App-Design
+# DIGITAL PAPER??
+
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
+
+## Overview
+### Description
+Allows people to scan their handwritten documents with their phone cameras and convert them into easily searchable PDFs. The uploaded documents can then be annotated and organized with a table of contents.
+
+### App Evaluation
+- **Category:** Productivity
+- **Mobile:** Mobile devices are convenient and allow for easy scanning of documents with the camera. 
+- **Story:** Creates a convenient resource of handwritten documents, such as notes for a student. Allows students who prefer handwritten notes to more easily sift through a large amount of unorganized and unsearchable documents.
+- **Market:** Any student or individual that handwrites often could utilize this app.
+- **Habit:** Students are likely to use this each day, after the end of each notetaking session. Students would also use this app to study and annotate their uploaded notes.
+- **Scope:** V1 would only scan documents using the camera and convert them into searchable documents. V2 would include a tagging system to organize documents. V3 would incorporate annotative features like a highlighter, setting breakpoints and/or a pen tool. V4 would let the user calibrate their handwriting to gain a more accurate scan for future scans.
+
+## Product Spec
+
+### 1. User Stories (Required and Optional)
+
+**Required Must-have Stories**
+
+* User can create a new account
+* User can login
+* User can scan a handwritten document
+* User can view a library of previously scanned documents
+* User can view an individual previously scanned document
+
+**Optional Nice-to-have Stories**
+
+* User can tag documents
+* User can search for documents using their tags and names
+* User can annotate documents with a highlighter
+* User can set up breakpoints (table of contents) within a document
+* User can calibrate their handwriting to obtain more accurate scans
+* User can edit scanned documents to check for errors
+
+### 2. Screen Archetypes
+
+* Login Screen
+   * User can login
+* Register Screen
+   * User can create a new account
+* Stream
+    * User can view a library of previously scanned documents
+* Creation - Scan
+    * User can scan a handwritten document
+* View
+    * User can view an individual previously scanned document
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+* Scan a Document
+* Document Library
+
+**Flow Navigation** (Screen to Screen)
+
+* Login Screen
+   * Create
+* Register Screen
+   * Create
+* Stream
+    * View
+* Creation - Scan
+    * Back to start of creation screens
+    * Will need multiple screens to represent creation process to scan 
+* View
+    * back to Stream
+
+## Wireframes
+[Add picture of your hand sketched wireframes in this section]
+<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+### [BONUS] Digital Wireframes & Mockups
+
+### [BONUS] Interactive Prototype
+
+## Schema 
+[This section will be completed in Unit 9]
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
