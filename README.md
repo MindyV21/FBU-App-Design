@@ -78,8 +78,11 @@ Allows people to scan their handwritten documents with their phone cameras and c
 <img src="wireframe.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="Screenshot 2021-07-07 120420.png" width=600>
 
 ### [BONUS] Interactive Prototype
+
+<img src="FBUwireframeAppDesign.gif" width=600>
 
 ## Schema 
 [This section will be completed in Unit 9]
