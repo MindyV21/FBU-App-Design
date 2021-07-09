@@ -121,5 +121,27 @@ document | File | original file
 convertedDoc | File | originally handwritten converted to a scannable pdf document 
 ### Networking
 - [Add list of network requests by screen ]
+
+* Stream
+    * (Read/GET) Query all documents where user is author
+    * ```
+      let query = PFQuery(className:"User
+      query.whereKey("author", equalTo: currentUser)
+      query.order(byDescending: "createdAt")
+      query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+         if let error = error { 
+            print(error.localizedDescription)
+         } else if let user = user {
+            print("Successfully retrieved \(user).")
+        // TODO: Do something with user...
+         }
+      }
+      ```
+    * (Delete) Delete existing document
+* Creation - Scan
+    * (Create/POST) Create a new document
+* View
+    * (Read/GET) specific document from objectId in array in User
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
