@@ -158,4 +158,8 @@ convertedDoc | File | originally handwritten converted to a scannable pdf docume
 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
-* API to read text from images with handwritten script
+* Scanner API to scan documents with handwritten text
+* API for handwriting text recognition (nanonets? https://nanonets.com/blog/handwritten-character-recognition/)
+  * AI specifically trained for notes, or special to each user
+* Evernote same idea https://evernote.com/features/search-handwriting
+* mlkit text recognition? 
