@@ -87,7 +87,9 @@ Allows people to scan their handwritten documents with their phone cameras and c
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+Property | #Type | Description 
+--- | --- | --- 
+Seconds | 301 | 283 
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
