@@ -89,34 +89,21 @@ Allows people to scan their handwritten documents with their phone cameras and c
 ### Models
 Model: User
 Property | Type | Description 
---- | --- | --- 
 objectId | String | unique id for the user (default field)
---- | --- | --- 
 createdAt | DateTime | date when account is created (default field)
---- | --- | --- 
 updatedAt | DateTime | date when account is last updated (default field)
---- | --- | --- 
 name | String | user's name 
---- | --- | --- 
 password | String | user's password (to do this correctly it would be hashed but for simplicity sake) 
---- | --- | --- 
 email | String | user's email they registered this account with 
---- | --- | --- 
 profileImage | File | user's profile image (not necessary)
---- | --- | --- 
 documents | Array | array of documents parse objects
 
 Model: Document
 Property | Type | Description
---- | --- | --- 
 objectId | String | unique id for the document (default field)
---- | --- | --- 
 createdAt | DateTime | date when document is created (default value)
---- | --- | --- 
 updatedAt | DateTime | date when document is last updated (default value)
---- | --- | --- 
 document | File | original file
---- | --- | --- 
 convertedDoc | File | originally handwritten converted to a scannable pdf document 
 ### Networking
 - [Add list of network requests by screen ]
