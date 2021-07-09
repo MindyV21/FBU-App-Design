@@ -128,7 +128,7 @@ convertedDoc | File | originally handwritten converted to a scannable pdf docume
       let query = PFQuery(className:"User
       query.whereKey("author", equalTo: currentUser)
       query.order(byDescending: "createdAt")
-      query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+      query.findObjectsInBackground { (users: [PFObject]?, error: Error?) in
          if let error = error { 
             print(error.localizedDescription)
          } else if let user = user {
@@ -142,6 +142,19 @@ convertedDoc | File | originally handwritten converted to a scannable pdf docume
     * (Create/POST) Create a new document
 * View
     * (Read/GET) specific document from objectId in array in User
+    * ```
+      let query = PFQuery(className:"Document")
+      query.whereKey("author", equalTo: currentUser)
+      query.order(byDescending: "createdAt")
+      query.findObjectsInBackground { (documents: [PFObject]?, error: Error?) in
+         if let error = error { 
+            print(error.localizedDescription)
+         } else if let document = document {
+            print("Successfully retrieved \(document).")
+        // TODO: Do something with document...
+         }
+      }
+      ```
 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
